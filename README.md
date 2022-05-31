@@ -24,7 +24,7 @@ For quick upload some directories are ignored. The whole structure is as follows
 ```
 
 ## Methods
-- Extract low-level features of _logo images_ in `images/` folder using _ResNet50V2_ trained on _Logo2K_ dataset. The output is an _array_ with dimension 2048.
+- Extract low-level features of _logo images_ in `images/` folder using _ResNet50V2_ trained on [Logo2K+](https://github.com/Wangjing1551/Logo-2k-plus-Dataset) dataset. The output is an _array_ with dimension 2048.
 - The output data of these images are stored in `preprocessed/pred_data_all_rn50v2.csv`, and the paths of these images are stored in `preprocessed/img_paths_all.csv`.
 - The input image for retrieval is processed by __step 1__ as well, and its output array is compared with arrays in `preprocessed/pred_data_all_rn50v2.csv` using _KNN_ algorithm.
 - The corresponding logo images of _5 nearest neighbours_ are the output.
